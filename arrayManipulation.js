@@ -7,3 +7,15 @@ function processArray(numbers) {
         }
     });
 }
+
+
+function formatArrayStrings(strings, processedNumbers) {
+    return strings.map((str, index) => {
+        const num = processedNumbers[index];
+        if (num % 2 === 0) {
+            return str.toUpperCase();
+        } else {
+            return str.toLowerCase();
+        }
+    });
+}
