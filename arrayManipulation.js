@@ -9,9 +9,10 @@ function processArray(numbers) {
 }
 
 
-function formatArrayStrings(strings, processedNumbers) {
+function formatArrayStrings(strings, numbers) {
+    let processedNumbers = processArray(numbers);
     return strings.map((str, index) => {
-        const num = processedNumbers[index];
+        let num = processedNumbers[index];
         if (num % 2 === 0) {
             return str.toUpperCase();
         } else {
@@ -19,3 +20,5 @@ function formatArrayStrings(strings, processedNumbers) {
         }
     });
 }
+
+export default arrayManipulation;
