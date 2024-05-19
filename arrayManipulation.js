@@ -1,3 +1,4 @@
+let arrayManipulation
 function processArray(numbers) {
     return numbers.map(num => {
         if (num % 2 === 0) {
@@ -21,4 +22,11 @@ function formatArrayStrings(strings, numbers) {
     });
 }
 
-export default arrayManipulation;
+let testNumber = [3,6,9,4,5,8]
+let testString = ['girl', 'hat', 'bag', 'woman', 'lecturer', 'cocktail']
+let test1 = processArray(testNumber)
+let test2 = formatArrayStrings(testString, testNumber)
+console.log(test1)
+console.log(test2)
+
+export  {formatArrayStrings, testNumber};
